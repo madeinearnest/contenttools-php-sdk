@@ -1,0 +1,32 @@
+{
+    "name": "madeinearnest/contenttools-php-sdk",
+    "type": "library",
+    "description": "Content Tools analysis api documentation.",
+    "keywords": ["Content Tools","API","SDK"],
+    "homepage": "http://contenttools.club/support",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIMatic SDK Generator",
+            "email": "support@contentools.club",
+            "homepage": "http://contenttools.club/support",
+            "role": "API Tool"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "mashape/unirest-php": "~3.0.1",
+        "apimatic/jsonmapper": "~1.3.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "ContentToolsLib\\": "src/"
+        }
+    }
+}
