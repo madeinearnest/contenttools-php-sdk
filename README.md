@@ -12,7 +12,7 @@ Open command prompt and type ```composer --version```. This should display the c
 * Using command line, navigate to the directory containing the generated files (including ```composer.json```) for the SDK. 
 * Run the command ```composer install```. This should install all the required dependencies and create the ```vendor``` directory in your project directory.
 
-![Building SDK - Step 1](https://apidocs.io/illustration/php?step=installDependencies&workspaceFolder=Content%20Tools-PHP)
+![Building SDK - Step 1](https://apidocs.io/illustration/php?step=installDependencies&workspaceFolder=ContentTools-PHP)
 
 ### [For Windows Users Only] Configuring CURL Certificate Path in php.ini
 
@@ -36,29 +36,29 @@ The following section explains how to use the ContentTools library in a new proj
 
 Open an IDE for PHP like PhpStorm. The basic workflow presented here is also applicable if you prefer using a different editor or IDE.
 
-![Open project in PHPStorm - Step 1](https://apidocs.io/illustration/php?step=openIDE&workspaceFolder=Content%20Tools-PHP)
+![Open project in PHPStorm - Step 1](https://apidocs.io/illustration/php?step=openIDE&workspaceFolder=ContentTools-PHP)
 
 Click on ```Open``` in PhpStorm to browse to your generated SDK directory and then click ```OK```.
 
-![Open project in PHPStorm - Step 2](https://apidocs.io/illustration/php?step=openProject0&workspaceFolder=Content%20Tools-PHP)     
+![Open project in PHPStorm - Step 2](https://apidocs.io/illustration/php?step=openProject0&workspaceFolder=ContentTools-PHP)     
 
 ### 2. Add a new Test Project
 
 Create a new directory by right clicking on the solution name as shown below:
 
-![Add a new project in PHPStorm - Step 1](https://apidocs.io/illustration/php?step=createDirectory&workspaceFolder=Content%20Tools-PHP)
+![Add a new project in PHPStorm - Step 1](https://apidocs.io/illustration/php?step=createDirectory&workspaceFolder=ContentTools-PHP)
 
 Name the directory as "test"
 
-![Add a new project in PHPStorm - Step 2](https://apidocs.io/illustration/php?step=nameDirectory&workspaceFolder=Content%20Tools-PHP)
+![Add a new project in PHPStorm - Step 2](https://apidocs.io/illustration/php?step=nameDirectory&workspaceFolder=ContentTools-PHP)
    
 Add a PHP file to this project
 
-![Add a new project in PHPStorm - Step 3](https://apidocs.io/illustration/php?step=createFile&workspaceFolder=Content%20Tools-PHP)
+![Add a new project in PHPStorm - Step 3](https://apidocs.io/illustration/php?step=createFile&workspaceFolder=ContentTools-PHP)
 
 Name it "testSDK"
 
-![Add a new project in PHPStorm - Step 4](https://apidocs.io/illustration/php?step=nameFile&workspaceFolder=Content%20Tools-PHP)
+![Add a new project in PHPStorm - Step 4](https://apidocs.io/illustration/php?step=nameFile&workspaceFolder=ContentTools-PHP)
 
 Depending on your project setup, you might need to include composer's autoloader in your PHP code to enable auto loading of classes.
 
@@ -68,7 +68,7 @@ require_once "../vendor/autoload.php";
 
 It is important that the path inside require_once correctly points to the file ```autoload.php``` inside the vendor directory created during dependency installations.
 
-![Add a new project in PHPStorm - Step 4](https://apidocs.io/illustration/php?step=projectFiles&workspaceFolder=Content%20Tools-PHP)
+![Add a new project in PHPStorm - Step 4](https://apidocs.io/illustration/php?step=projectFiles&workspaceFolder=ContentTools-PHP)
 
 After this you can add code to initialize the client library and acquire the instance of a Controller class. Sample code to initialize the client library and using controller methods is given in the subsequent sections.
 
@@ -78,23 +78,23 @@ To run your project you must set the Interpreter for your project. Interpreter i
 
 Open ```Settings``` from ```File``` menu.
 
-![Run Test Project - Step 1](https://apidocs.io/illustration/php?step=openSettings&workspaceFolder=Content%20Tools-PHP)
+![Run Test Project - Step 1](https://apidocs.io/illustration/php?step=openSettings&workspaceFolder=ContentTools-PHP)
 
 Select ```PHP``` from within ```Languages & Frameworks```
 
-![Run Test Project - Step 2](https://apidocs.io/illustration/php?step=setInterpreter0&workspaceFolder=Content%20Tools-PHP)
+![Run Test Project - Step 2](https://apidocs.io/illustration/php?step=setInterpreter0&workspaceFolder=ContentTools-PHP)
 
 Browse for Interpreters near the ```Interpreter``` option and choose your interpreter.
 
-![Run Test Project - Step 3](https://apidocs.io/illustration/php?step=setInterpreter1&workspaceFolder=Content%20Tools-PHP)
+![Run Test Project - Step 3](https://apidocs.io/illustration/php?step=setInterpreter1&workspaceFolder=ContentTools-PHP)
 
 Once the interpreter is selected, click ```OK```
 
-![Run Test Project - Step 4](https://apidocs.io/illustration/php?step=setInterpreter2&workspaceFolder=Content%20Tools-PHP)
+![Run Test Project - Step 4](https://apidocs.io/illustration/php?step=setInterpreter2&workspaceFolder=ContentTools-PHP)
 
 To run your project, right click on your PHP file inside your Test project and click on ```Run```
 
-![Run Test Project - Step 5](https://apidocs.io/illustration/php?step=runProject&workspaceFolder=Content%20Tools-PHP)
+![Run Test Project - Step 5](https://apidocs.io/illustration/php?step=runProject&workspaceFolder=ContentTools-PHP)
 
 ## How to Test
 

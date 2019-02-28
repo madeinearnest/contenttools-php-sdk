@@ -1,5 +1,5 @@
 {
-    "name": "apimatic/contenttools",
+    "name": "madeinearnest/contenttools-php-sdk",
     "type": "library",
     "description": "Content Tools analysis api documentation.",
     "keywords": ["Content Tools","API","SDK"],
