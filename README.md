@@ -73,6 +73,3 @@ $result = $client->createSentiment($text);
 
 
 [Back to List of Controllers](#list_of_controllers)
-
-
-
