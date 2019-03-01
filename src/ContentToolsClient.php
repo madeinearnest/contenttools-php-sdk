@@ -30,4 +30,12 @@ class ContentToolsClient
     {
         return Controllers\APIController::getInstance();
     }
+    /**
+     * Singleton access to API controller
+     * @return Controllers\APIController The *Singleton* instance
+     */
+    public function getClient()
+    {
+        return Controllers\APIController::getInstance();
+    }
 }

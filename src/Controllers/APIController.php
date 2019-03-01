@@ -42,18 +42,18 @@ class APIController extends BaseController
     }
 
     /**
-     * Analyse the sentiment of text
+     * @todo Add general description for this endpoint
      *
-     * @param string $text Text to be analysed
+     * @param string $text TODO: type description here
      * @return mixed response from the API call
      * @throws APIException Thrown if API call fails
      */
-    public function createSentiment(
+    public function createTopic(
         $text
     ) {
 
         //prepare query string for API call
-        $_queryBuilder = '/analyse/sentiment';
+        $_queryBuilder = '/analyse/topic';
 
         //validate and preprocess url
         $_queryUrl = APIHelper::cleanUrl(Configuration::$BASEURI . $_queryBuilder);
@@ -92,6 +92,6 @@ class APIController extends BaseController
 
         $mapper = $this->getJsonMapper();
 
-        return $mapper->mapClass($response->body, 'ContentToolsLib\\Models\\SentimentScore');
+        return $mapper->mapClass($response->body, 'ContentToolsLib\\Models\\Topic');
     }
 }
